@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="border">
+            <div class="border2">
+                <div class="inp"><input id="inp" type="text" placeholder="0" style="background-color: #262625; border-color: black; width:100%; height: 200px; border-top-left-radius: 30px; border-top-right-radius: 30px;  font-size: 40px; padding-left: 20px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; ">
+                    <div class="btn-div">
+                        <div class="btn1"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="allClear()" >AC</button></div>
+                        <div class="btn1"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('%')" >%</button></div>
+                        <div class="btn1"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('*')" >*</button></div>
+                        <div class="btn1"><button style="height: 70px; width: 100%; background-color:#f205e2; border-color: pink; color: white; font-size: 15px;" onclick="deleteLast()" >Del</button></div>
+                        <div class="btn2"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('7')" >7</button></div>
+                        <div class="btn2"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('8')" >8</button></div>
+                        <div class="btn2"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('9')" >9</button></div>
+                        <div class="btn2"><button style="height: 70px; width: 100%; background-color:#f205e2; border-color: pink; color: white; font-size: 15px;" onclick="setANumber('-')" >-</button></div>
+                        <div class="btn3"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('4')" >4</button></div>
+                        <div class="btn3"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('5')" >5</button></div>
+                        <div class="btn3"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('6')" >6</button></div>
+                        <div class="btn3"><button style="height: 70px; width: 100%; background-color:#f205e2; border-color: pink; color: white; font-size: 15px;" onclick="setANumber('+')" >+</button></div>
+                        <div class="btn4"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('1')" >1</button></div>
+                        <div class="btn4"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('2')" >2</button></div>
+                        <div class="btn4"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('3')" >3</button></div>
+                        <div class="btn6"><button style="height: 145px; width: 100%; background-color:#f205e2; border-color: pink; color: white; font-size: 15px; border-bottom-right-radius: 30px; " onclick="calc()" >=</button></div>
+                        <br>
+                        <div class="btn5"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px; border-bottom-left-radius: 30px;" onclick="setANumber('.')" >.</button></div>
+                        <div class="btn5"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('0')" >0</button></div>
+                        <div class="btn5"><button style="height: 70px; width: 100%; background-color:#32314f; border-color: black; color: #bf22b5; font-size: 18px;" onclick="setANumber('%')" >%</button></div>
+                    </div></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="ap.js"></script>
+</html>
